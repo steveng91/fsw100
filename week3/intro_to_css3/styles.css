@@ -1,0 +1,28 @@
+.header1 {
+    font-family:"Georgia";
+    text-align: center;
+    color: darkgreen;
+}
+#header-2 {
+    font-family:"Georgia";
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+div.p{
+    line-height: 25px;
+}
+#suggestion{
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: underline;
+    color:darkorange
+}
+img{
+    float:left
+}
+img{
+    padding: 50px;
+}
