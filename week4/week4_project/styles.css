@@ -1,21 +1,24 @@
-.navbar {
+article{
+    width: auto;
+    height: auto;
+    border: 15px solid green;
+    padding: 100px;
+    margin: auto;
+    align-content: stretch;
+  }
+  .navbar {
     overflow: hidden;
     background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
-
+    align-content:center;
   }
-img{
+  img{
     float: left;
     padding: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     height: 200px;
     width: 400px;
-}
-.blog{
-    display: inline-block;
-    border: 2px solid black;
-    margin: auto;
 }
