@@ -1,56 +1,65 @@
 .grid{
     display: grid;
     grid-template-columns:repeat(4, 1fr);
-    grid-template-rows:repeat(4, minmax(150px, auto));
+    grid-auto-rows: minmax(100px,auto);
+    min-width: 768px;
     grid-gap: 10px;
     margin: 0 auto;
+    grid-template-areas: 
+    "one one one one"
+    "two three four five"
+    "six six seven seven"
+    "eight eight eight nine";
 }
+
 .one{
-    grid-column: 1/5;
     background-color: #f5c6d6;
+    grid-area: one;
 }
 .two{
     background-color: #ee2e84;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-area: two;
 }
 .three{
     background-color: #ee2e84;
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-area: three;
 }
 .four{
     background-color: #ee2e84;
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-area: four;
 }
 .five{
     background-color: #ee2e84;
-    grid-column: 4/5;
-    grid-row: 2/3;
+    grid-area: five;
 }
 .six{
     background-color: #85cfd8;
-    grid-column: 1/3;
-    grid-row: 3/4;
+    grid-area: six;
 }
 .seven{
     background-color: #85cfd8;
-    grid-column: 3/5;
-    grid-row: 3/4;
+    grid-area: seven;
 }
 .eight{
     background-color: #8dc63f;
-    grid-column:1/4 ;
-    grid-row: 4/5;
+    grid-area: eight;
 }
 .nine{
     background-color: #e76e34;
-    grid-column: 4/5;
-    grid-row: 4/5;
+    grid-area: nine;
 }
-@media only screen and (max-width: 768px) {
-    [class*="grid"] {
-      width: 100%;
+@media screen and (max-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns:100%;;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
     }
 }
