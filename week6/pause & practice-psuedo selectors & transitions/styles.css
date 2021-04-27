@@ -1,0 +1,89 @@
+.box1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.box1:hover{
+    background-color: blueviolet;
+    width: 400px;
+    height: 300px;
+    transition: background-color 1s ease-in, width 1s ease-in-out,height 1s ease-in-out;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+.box2:hover{
+    width: 500px;
+    height: 50px;
+    padding: 50px;
+    transition: width 1s ease-in-out,height 1s ease-in-out,padding 2s ease-in-out 1s
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: palevioletred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    opacity: 0.2;
+}
+.box3:hover{
+    border: ridge;
+    width: 400;
+    height: 400;
+    background-color: indigo;
+    opacity: 1.0;
+    transition: width 1s ease-in-out, height 1s ease-in-out, background-color 1s ease-in-out, opacity 1s ease-in-out;
+}
+.box4 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: goldenrod;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+.box4:hover{
+    border-radius: 50px;
+    padding: 30px;
+    transition: border-radius 1s ease-in-out 1s,padding 1s ease-in-out
+}
+.box5 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.box5:hover{
+    border-style: double;
+    margin: 50px;
+    box-shadow: 20px 20px midnightblue;
+    transition: border-style 1.5s ease-in-out, margin 1s ease-in-out, box-shadow 1s ease-in-out
+
+}
+.box6 {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: saddlebrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.box6:hover{
+    width: fit-content;
+    height: 400;
+    font-size: 100px;
+    font-style: italic;
+    transition: width 1s ease-in-out, height 1s ease-in-out, font-size 1s ease-in-out;
+}
